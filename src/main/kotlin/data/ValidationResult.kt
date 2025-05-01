@@ -1,4 +1,4 @@
-package org.data
+package data
 
 // Validation class to hold error messages
 data class ValidationResult(

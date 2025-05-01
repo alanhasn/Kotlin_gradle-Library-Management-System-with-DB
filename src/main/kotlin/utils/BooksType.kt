@@ -1,4 +1,4 @@
-package org.utils
+package utils
 
 enum class BooksType {
     ROMANTIC,

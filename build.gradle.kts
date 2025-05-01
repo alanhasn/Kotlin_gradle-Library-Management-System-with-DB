@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.1.10"
+    application
 }
 
 group = "org.example"
@@ -11,11 +12,19 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("org.xerial:sqlite-jdbc:3.36.0")
+    implementation("at.favre.lib:bcrypt:0.9.0")
+
 }
 
 tasks.test {
     useJUnitPlatform()
 }
+
 kotlin {
     jvmToolchain(23)
+}
+
+application {
+    mainClass.set("MainKt")
 }
