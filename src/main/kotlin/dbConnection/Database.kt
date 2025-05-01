@@ -39,7 +39,7 @@ object Database {
                 """.trimIndent())
 
             // Create Authors Table
-            statement.executeQuery("""
+            statement.execute("""
                  CREATE TABLE IF NOT EXISTS authors(
                     id INTEGER PRIMARY KEY,
                     name TEXT NOT NULL

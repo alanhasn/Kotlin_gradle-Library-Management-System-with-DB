@@ -1,7 +1,7 @@
 package controllers
 
 import data.ValidationResult
-import models.User
+import data.User
 import at.favre.lib.crypto.bcrypt.BCrypt
 import java.sql.PreparedStatement
 import java.sql.ResultSet
